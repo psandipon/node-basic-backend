@@ -19,6 +19,7 @@ if (!config.get("jwtPrivateKey")) {
 
 var mongoConnectURL = config.get("vidly_db");
 // "mongodb://localhost/vidly"
+//
 mongoose
   .connect(mongoConnectURL)
   .then(() => {
